@@ -1,0 +1,32 @@
+{%extends 'base.html.twig'%}
+
+{%block title%} MonPsy {%endblock%}
+
+
+{%block body%}
+
+    {#
+    <body class="arrierePlan">
+    <main>
+        <img src="{{ asset('img/manifestpsy.jpg') }}">
+
+    </main>
+    </body>
+    #}
+    <main>
+        <div class="popupContainer">
+            <section class="popup">
+               <div class="imageContainer">
+                   <img src="{{ asset('img/manifestpsy.jpg') }}">
+               </div>
+            </section>
+        </div>
+    </main>
+
+    {% block javascripts %}
+        {# {{ encore_entry_script_tags('app') }} #}
+
+<script src="script.js"></script>
+    {% endblock %}
+
+{%endblock%}

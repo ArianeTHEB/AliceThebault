@@ -1,0 +1,64 @@
+{%extends 'base.html.twig'%}
+
+{%block title%} Informations Pratiques {%endblock%}
+
+
+{%block body%}
+<body class="arrierePlanTrans">
+    <main>
+        <div class="container">
+            <div class="row">
+            <div class="col">
+                <img style="width: 300px" src="{{ asset('img/Alice.jpg') }}">
+            </div>
+            <div class="col-5" style="text-align: center">
+                <h4 style="font-weight: bold">Proche de la Chapelle sur Erdre, Sucé sur Erdre, Grandchamps des Fontaines, Treillières, Carquefou et Nort sur Erdre</h4>
+                <br>
+        <h4>Durée et tarif des consultations</h4>
+            Consultation individuelle enfant, adolescent et adulte<br>
+            Séance de 40 minutes, au tarif de 50€<br>
+
+           <h4> Consultation famille et couple</h4>
+            1ère séance de 1h30, au tarif de 130€<br>
+            séance de suivi de 40 minutes, au tarif de 65€<br>
+
+
+            </div>
+            <div class="col">
+                <img style="width: 300px" src="{{ asset('img/cabinet.jpg') }}">
+            </div>
+        </div>
+        </div>
+        <div class="container">
+        <div class="row">
+<div class="col" style="text-align: center">
+    <br>
+    <h4 style="font-weight: bold">Le cabinet est accessible aux personnes à mobilité réduite</h4>
+    <br>
+        <h4 >Règlement et facturation</h4>
+           <h6> Le règlement des consultations se fait à l’issue de chaque entretien, <br>
+        par chèque libellé à l’ordre d’Alice Thébault, ou bien par espèces.<br></h6>
+
+            Les consultations chez un psychologue ne sont pas remboursées par la sécurité sociale. <br>
+        Cependant, certaines mutuelles proposent un remboursement total ou partiel des rendez-vous. Je vous fournirai une facture sur demande.
+
+            Toute consultation non annulée sera due.
+
+    <br><br>
+            <p style="font-weight: bold">Je ne fais pas partie du dispositif “mon psy”, pour plus d’explication veuillez cliquer ici :
+                <a href="{{ path('monPsy') }}" title="ManifestemonPsy" >
+                <img style="width: 50px" src="{{ asset('img/monpsy1.jpg') }}">
+                </a>
+
+            </p>
+
+
+
+
+</div>
+        </div>
+        </div>
+    </main>
+</body>
+
+{%endblock%}

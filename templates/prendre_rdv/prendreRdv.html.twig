@@ -1,0 +1,39 @@
+{%extends 'base.html.twig'%}
+
+{%block title%} Prendre Rendez-vous {%endblock%}
+
+
+{%block body%}
+<body class="arrierePlan">
+    <main>
+        <div class="row">
+
+<div class="col" style="text-align: center; font-size: 18px" >
+            Jours et horaires de consultations :<br>
+            du Lundi au Jeudi<br>
+            de 10h à 20h <br>
+            sur rendez-vous
+    <br><br><br>
+    <a href="https://www.doctolib.fr/psychologue/casson/alice-thebault/booking/motives?profile_skipped=true&telehealth=false&placeId=practice-150990&specialityId=14">
+    <img style="width: 200px" src="{{ asset('img/doctolib.jpg') }}">
+    </a>
+            </div>
+        </div>
+        <div class="col"></div>
+
+        <div class="row">
+            <div class="col">
+                <img style="width: 250px ; margin-left: 200px" src="{{ asset('img/ext.jpg') }}">
+            </div>
+            <div class="col"></div>
+            <div class="col">
+                <img style="width: 300px" src="{{ asset('img/planGoogle.jpg') }}">
+            </div>
+
+
+        </div>
+
+    </main>
+</body>
+
+{%endblock%}
