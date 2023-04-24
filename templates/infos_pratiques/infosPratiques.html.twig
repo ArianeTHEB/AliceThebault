@@ -2,6 +2,10 @@
 
 {%block title%} Informations Pratiques {%endblock%}
 
+ {% block javascripts %}
+     {# {{ encore_entry_script_tags('app') }} #}
+
+ {% endblock %}
 
 {%block body%}
 <body class="arrierePlanTrans">
@@ -46,19 +50,10 @@
 
     <br><br>
             <p style="font-weight: bold">Je ne fais pas partie du dispositif “mon psy”, pour plus d’explication veuillez cliquer ici :
-                {#<a href="{{ path('monPsy') }}" title="ManifestemonPsy" >#}
-                <img class="monPsy" style="width: 50px" src="{{ asset('img/monpsy1.jpg') }}" >
-                {#</a>#}
-
-
-    {% block javascripts %}
-        {# {{ encore_entry_script_tags('app') }} #}
-    {% endblock %}
-
+                <a href="{{ path('monPsy') }}" title="ManifestemonPsy" >
+                <img style="width: 50px" src="{{ asset('img/monpsy1.jpg') }}" >
+                </a>
             </p>
-
-
-
 
 </div>
         </div>

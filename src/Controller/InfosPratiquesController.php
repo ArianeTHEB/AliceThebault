@@ -19,4 +19,5 @@ class InfosPratiquesController extends AbstractController
     {
         return $this->render('infos_pratiques/monPsy.html.twig');
     }
+
 }
