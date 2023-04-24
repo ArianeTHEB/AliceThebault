@@ -98,5 +98,46 @@ background: url("../img/ArrièrePlanSite.jpg");
     height: 500px;
 }
 
+.monPsy{
+
+}
 
 
+.popupContainer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupContainer.active{
+    display: flex;
+
+}
+
+.popup{
+    height: 1000px;
+    width: 700px;
+    border-radius: 10px;
+    padding: 50px;
+    animation: animationA 1s ease-in-out .5ms backwards;
+
+}
+/*Animation formating*/
+@keyframes animationA {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.imageContainer{
+
+}
