@@ -50,9 +50,22 @@
 
     <br><br>
             <p style="font-weight: bold">Je ne fais pas partie du dispositif “mon psy”, pour plus d’explication veuillez cliquer ici :
-                <a href="{{ path('monPsy') }}" title="ManifestemonPsy"">
+                {#tentative de popup ou modal#}
+    <div class="box">
+        <a href="#popup" class="button" >
+            <img style="width: 50px;" src="{{ asset('img/monpsy1.jpg') }}">
+        </a>
+    </div>
+
+    <div id="popup" class="overlay">
+        <div class="popup">
+            <p><img src="{{ asset('img/manifestpsy.jpg') }}"  class="monPsy"></p>
+            <a href="#" class="cross">&times;</a>
+        </div>
+    </div>
+                {#<a href="{{ path('monPsy') }}" title="ManifestemonPsy"">
                 <img style="width: 50px" src="{{ asset('img/monpsy1.jpg') }}" >
-                </a>
+                </a>#}
             </p>
 
 </div>

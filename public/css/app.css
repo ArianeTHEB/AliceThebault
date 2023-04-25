@@ -99,8 +99,8 @@ background: url("../img/ArrièrePlanSite.jpg");
 }
 
 .monPsy{
-    height: 1000px;
-    width: 700px;
+    height: 800px;
+    width: 500px;
     border-radius: 10px;
     padding: 5px;
     /*display: flex;*/
@@ -108,21 +108,22 @@ background: url("../img/ArrièrePlanSite.jpg");
 
 /*formatting modal*/
 .box{
-    width: 150px;
-    margin: 10rem auto;
+    width: 50px;
+    margin-left: 48%;
+   /* margin: 10rem auto;
     padding-top: 10rem;
     background-color: #999999;
     padding: 2.5rem;
     border: 2px solid #DDDDDD ;
-    border-radius:20px/50px;
+    border-radius:20px/50px;*/
     }
 
 .button{
-    font-size: 1.3rem;
+    /*font-size: 1.3rem;
     padding: 1rem;
     color: #FFFFFF;
     border: 2px solid #12fcf8;
-    border-radius:20px/50px;
+    border-radius:20px/50px;*/
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -150,19 +151,21 @@ background: url("../img/ArrièrePlanSite.jpg");
 }
 
 .popup{
-    margin: 6rem auto;
-    padding: 2rem;
+    margin: 50px;
+    padding: 10px;
     background:#FFFFFF;
     border-radius: 5px;
-    width: 50%;
+    height: 855px;
+    width: 550px;
     position: relative;
     transition: all 0.4s ease-in-out;
+    align-items: center;
 }
 
 .popup .cross{
     position: absolute;
-    top: 1rem;
-    right: 2rem;
+    top: 3px;
+    right: 3px;
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
@@ -171,5 +174,5 @@ background: url("../img/ArrièrePlanSite.jpg");
 }
 
 .popup .cross:hover{
-    color: #12fcf8;
+    color: grey;
 }
