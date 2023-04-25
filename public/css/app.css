@@ -99,12 +99,77 @@ background: url("../img/ArrièrePlanSite.jpg");
 }
 
 .monPsy{
-    height: 1100px;
-    width: 800px;
+    height: 1000px;
+    width: 700px;
     border-radius: 10px;
     padding: 5px;
-    display: flex;
-
+    /*display: flex;*/
 }
 
+/*formatting modal*/
+.box{
+    width: 150px;
+    margin: 10rem auto;
+    padding-top: 10rem;
+    background-color: #999999;
+    padding: 2.5rem;
+    border: 2px solid #DDDDDD ;
+    border-radius:20px/50px;
+    }
 
+.button{
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: #FFFFFF;
+    border: 2px solid #12fcf8;
+    border-radius:20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.button:hover{
+    background:#12fcf8;
+    color: black;
+}
+
+.overlay{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    transition: opacity .4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup{
+    margin: 6rem auto;
+    padding: 2rem;
+    background:#FFFFFF;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.popup .cross{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition:0.3s ease;
+    color: black;
+}
+
+.popup .cross:hover{
+    color: #12fcf8;
+}
