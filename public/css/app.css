@@ -1,5 +1,5 @@
 main {
-    margin-top: 20px;
+   /* margin-top: 5px;*/
     margin-bottom: 100px;
     margin-left: 5%;
     margin-right: 5%;
@@ -107,23 +107,13 @@ background: url("../img/ArrièrePlanSite.jpg");
 }
 
 /*formatting modal*/
+
 .box{
     width: 50px;
     margin-left: 48%;
-   /* margin: 10rem auto;
-    padding-top: 10rem;
-    background-color: #999999;
-    padding: 2.5rem;
-    border: 2px solid #DDDDDD ;
-    border-radius:20px/50px;*/
     }
 
 .button{
-    /*font-size: 1.3rem;
-    padding: 1rem;
-    color: #FFFFFF;
-    border: 2px solid #12fcf8;
-    border-radius:20px/50px;*/
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -151,7 +141,7 @@ background: url("../img/ArrièrePlanSite.jpg");
 }
 
 .popup{
-    margin: 50px;
+    margin-left: 35%;
     padding: 10px;
     background:#FFFFFF;
     border-radius: 5px;
