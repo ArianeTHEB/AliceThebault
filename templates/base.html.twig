@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}bienvenue{% endblock %}</title>
 
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -36,7 +36,7 @@
         {% block extrastyles %}
                     {% endblock %}
 
-        <section>
+        <section class="section">
             <h1 class="alice" style="font-size: 65px; font-family: 'Abril Fatface', cursive;" >ALICE THEBAULT </h1>
             <div class="alice" style="font-size: 20px; font-family: 'Abril Fatface', cursive;"> Psychologue Clinicienne à Casson</div>
         </section>
@@ -61,7 +61,6 @@
             <br>Tel : 06.48.58.02.32   N° Adeli : 44 93 11 372 <br>
         </div>
 
-        <span class="line"></span>
     </footer>
     </body>
 </html>
