@@ -1,14 +1,25 @@
-<nav class="navbar {#navbar-expand-md position-fixed#}">
+<nav class="navbar-expand-md navbar-light position-fixed">
 
-    {#<div class="containerNav">#}
+    <div class="container">
 
-    <div class="nav-links">
-        <ul>
-            <li> <a class="navStyle" href="{{ path('presentation') }}" title="Présentation">Présentation</a></li>
-            <li> <a class="navStyle" href="{{ path('consultations') }}" title="Consultations">Consultations</a></li>
-            <li> <a class="navStyle" href="{{ path('experiences') }}" title="Expériences">Expériences</a></li>
-            <li> <a class="navStyle" href="{{ path('infos_pratiques') }}" title="Informations pratiques">Informations Pratiques</a></li>
-            <li> <a class="navStyle" href="{{ path('prendre_rdv') }}" title="Prendre rdv">Prendre Rendez-vous</a></li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-light"></span>
+    </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('presentation') }}" title="Présentation">Présentation</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('consultations') }}" title="Consultations">Consultations</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('experiences') }}" title="Expériences">Expériences</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('infos_pratiques') }}" title="Informations pratiques">Informations Pratiques</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('prendre_rdv') }}" title="Prendre rdv">Prendre Rendez-vous</a></li>
         </ul>
 
     </div>
