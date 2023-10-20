@@ -184,7 +184,9 @@ background: url("../img/ArrièrePlanSite.jpg");
     border-radius: 5px;
     height: 550px;
     width: 550px;
-    position: relative;
+   /*inset: 0;
+    position: fixed;
+    z: 40;*/
     transition: all 0.4s ease-in-out;
     align-items: center;
 }
