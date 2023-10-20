@@ -42,7 +42,14 @@ background: url("../img/ArrièrePlanSite.jpg");
     justify-content: space-between;
     }
 
-/*formatting the navbar
+/*formatting the navbar*/
+.container-fluid {
+    position: center;
+    display: block;
+    width : 100%;
+    height: 52px;
+    background-color: #a4b197;
+}
 .navbar {
     position: center;
     display: flex;
@@ -61,11 +68,11 @@ background: url("../img/ArrièrePlanSite.jpg");
     position: center;
 }
 
-.navbar .nav-links ul li {
+.navbar .nav-link ul li {
     margin:0 120px;
 }
 
-.navStyle{
+/*.navStyle{
     text-decoration: none;
     color: black;
 }*/
@@ -85,7 +92,7 @@ background: url("../img/ArrièrePlanSite.jpg");
 
 /*formatting consultation*/
 
-.container{
+.container1{
     margin-top: 50px;
 }
 
@@ -400,4 +407,3 @@ background: url("../img/ArrièrePlanSite.jpg");
         justify-content: space-between;
         background-color: #a4b197;
     }*/
-}
