@@ -15,10 +15,16 @@
         certains problèmes requièrent d’être pensés avec un professionnel neutre et bienveillant.
         Parfois s’entretenir avec un psychologue peut être nécessaire pour surmonter certaines difficultés.<br><br>
 
-                   <div class="box2">
+                   {#<div class="box2">
                         <a href="#soutienIndividuel" class="button2">
                             Lire Plus...
                         </a>
+                    </div>#}
+{# formatage bouton modal #}
+                    <div class="container">
+                        <div class="interior">
+                            <a class="btn" href="#open-modal">Lire plus...</a>
+                        </div>
                     </div>
 <br>
         <p>
@@ -79,9 +85,14 @@
 
             </div>
         </div>
+{#formatage de la modal pop up#}
+        <div id="open-modal" class="modal-window">
+            <div>
+                <a href="#" title="Close" class="modal-close">Close</a>
+                <!-- Your Modal Content Goes Here -->
 
         {#popup soutien individuel#}
-        <div id="soutienIndividuel" class="overlay">
+       {# <div id="soutienIndividuel" class="overlay">#}
             <div style="margin-top: 10%" class="soutienIndividuel">
                 <h2>SOUTIEN INDIVIDUEL</h2>
                 <br>
@@ -109,6 +120,9 @@
                 <a href="{{ path('consultations') }}" class="cross">&times;</a>
             </div>
         </div>
+        </div>
+        </div>
+
 
         {#popup psychothérapie#}
         <div id="psychotherapie" class="overlay">
@@ -127,7 +141,7 @@
 
                 </ul>
 
-                <a href="{{ path('consultations') }}" class="cross">&times;</a>
+                <a href="#" class="cross">&times;</a>
             </div>
         </div>
 
@@ -152,7 +166,7 @@
 
                 </ul>
 
-                <a href="{{ path('consultations') }}" class="cross">&times;</a>
+                <a href="#" class="cross">&times;</a>
             </div>
         </div>
 
@@ -180,7 +194,7 @@
 
                 </ul>
 
-                <a href="{{ path('consultations') }}" class="cross">&times;</a>
+                <a href="#" class="cross">&times;</a>
             </div>
         </div>
 
