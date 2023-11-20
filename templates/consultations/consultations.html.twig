@@ -7,8 +7,8 @@
 <body class="arrierePlanTrans">
 
         <div class="container1">
-            <div class="row gy-4 gy-md-0">
-                <div class="col-12 col-md-3" style="text-align: justify">
+            <div class="row gy-1 gy-md-0">
+                <div class="col-6 col-md-3" style="text-align: justify">
         <p>
         <h2> SOUTIEN INDIVIDUEL</h2>
         Venir consulter n’est pas signe d’échec,
@@ -23,21 +23,31 @@
 {# formatage bouton modal #}
                     <div class="container">
                         <div class="interior">
-                            <a class="btn" href="#open-modal">Lire plus...</a>
+                            <a class="btn" href="#soutienIndividuel">Lire plus...</a>
                         </div>
                     </div>
+                </div>
+            </div>
 <br>
+
+                    <div class="row gy-2 gy-md-0">
+                        <div class="col-6 col-md-3" style="text-align: justify">
         <p>
         <h2> PSYCHOTHERAPIE</h2>
         Le psychologue est présent pour vous accompagner dans vos réflexions,
         introspections à l’égard de votre histoire personnelle.<br><br>
-                    <div class="box2">
+                            <div class="container">
+                                <div class="interior">
+                                    <a class="btn" href="#psychotherapie">Lire plus...</a>
+                                </div>
+                            </div>
+                    {#<div class="box2">
                         <a href="#psychotherapie" class="button2" >
                             Lire Plus...
                         </a>
-                    </div>
-
+                    </div>#}
                 </div>
+
 
                 <div class="col-12 col-md-6">
 
@@ -58,35 +68,49 @@
 
 
 
-<div class="col-12 col-md-3" style="text-align: justify">
+{#<div class="col-12 col-md-3" style="text-align: justify">#}
+
+        <div class="row gy-1 gy-md-0">
+            <div class="col-3 col-md-3" style="text-align: justify">
         <p>
         <h2>SOUTIEN A LA PARENTALITE</h2>
             La plupart des psychologues ont une appétence pour un champ d'expertise en particulier.
             Le mien est centré autour de la famille existante ou à venir.<br><br>
-    <div class="box2">
+                <div class="container">
+                    <div class="interior">
+                        <a class="btn" href="#parentalité">Lire plus...</a>
+                    </div>
+                </div>
+    {#<div class="box2">
         <a href="#parentalité" class="button2" >
             Lire Plus...
         </a>
-    </div>
+    </div>#}
 
 <br>
+                <div class="row gy-2 gy-md-0">
+                    <div class="col-6 col-md-3" style="text-align: justify">
         <p>
         <h2>THERAPIE DE COUPLES</h2>
             Avancer à deux est un exercice complexe qui nécessite parfois l’intervention
             d’un tiers afin de renouer avec la parole et de retrouver une harmonie de couple.<br><br>
-    <div class="box2">
+
+                        <div class="container">
+                            <div class="interior">
+                                <a class="btn" href="#couple">Lire plus...</a>
+                            </div>
+                        </div>
+    {#<div class="box2">
         <a href="#couple" class="button2" >
             Lire Plus...
         </a>
-    </div>
-
-
+    </div>#}
 </div>
 
             </div>
         </div>
 {#formatage de la modal pop up#}
-        <div id="open-modal" class="modal-window">
+        <div id="soutienIndividuel" class="modal-window">
             <div>
                 <a href="#" title="Close" class="modal-close">Close</a>
                 <!-- Your Modal Content Goes Here -->
@@ -117,16 +141,20 @@
 
                 </ul>
 
-                <a href="{{ path('consultations') }}" class="cross">&times;</a>
+                {#<a href="#" class="cross">&times;</a>#}
             </div>
-        </div>
         </div>
         </div>
 
 
         {#popup psychothérapie#}
-        <div id="psychotherapie" class="overlay">
-            <div style="margin-top: 10%" class="psychotherapie">
+        <div id="psychotherapie" class="modal-window">
+            <div>
+                <a href="#" title="Close" class="modal-close">Close</a>
+                <!-- Your Modal Content Goes Here -->
+
+               {#<div id="psychotherapie" class="overlay">
+            <div style="margin-top: 10%" class="psychotherapie">#}
                 <h2>PSYCHOTHERAPIE</h2>
                 <br>
 
@@ -148,8 +176,11 @@
 
 
         {#popup soutien a la parentalité#}
-        <div id="parentalité" class="overlay">
-            <div style="margin-top: 10%" class="parentalité">
+       {# <div id="parentalité" class="overlay">
+            <div style="margin-top: 10%" class="parentalité">#}
+                <div id="parentalité" class="modal-window">
+                    <div>
+                        <a href="#" title="Close" class="modal-close">Close</a>
                 <h2>SOUTIEN A LA PARENTALITE</h2>
                 <br>
                 <ul style="text-align: justify">
@@ -173,8 +204,11 @@
 
 
         {#popup Thérapie de couples#}
-        <div id="couple" class="overlay">
-            <div style="margin-top: 10%" class="couple">
+        {#<div id="couple" class="overlay">
+            <div style="margin-top: 10%" class="couple">#}
+            <div id="couple" class="modal-window">
+                <div>
+                    <a href="#" title="Close" class="modal-close">Close</a>
                 <h2>THERAPIE DE COUPLE</h2>
                 <br>
                 <ul style="text-align: justify">
@@ -197,7 +231,9 @@
                 <a href="#" class="cross">&times;</a>
             </div>
         </div>
-
+        </div>
+                    </div>
+        </div>
 </body>
 
 {%endblock%}
