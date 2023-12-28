@@ -1,26 +1,25 @@
 <nav class="navbar-expand-md">
+
 <div class="container-fluid">
-
-
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon bg-light"></span>
     </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav">
 
-        <ul class="navbar">
-            <li class="nav">
+        <ul class="nav navbar">
+            <li class="nav-item active">
                 <a class="nav-link" href="{{ path('presentation') }}" title="Présentation" style="color: black">Présentation</a></li>
-            <li class="nav">
+            <li class="nav-item">
                 <a class="nav-link" href="{{ path('consultations') }}" title="Consultations" style="color: black">Consultations</a></li>
-            <li class="nav">
+            <li class="nav-item">
                 <a class="nav-link" href="{{ path('experiences') }}" title="Expériences" style="color: black">Expériences</a></li>
-            <li class="nav">
+            <li class="nav-item">
                 <a class="nav-link" href="{{ path('infos_pratiques') }}" title="Informations pratiques" style="color: black">Informations Pratiques</a></li>
-            <li class="nav">
-                <a class="nav-link" href="{{ path('prendre_rdv') }}" title="Prendre rdv"style="color: black">Prendre Rendez-vous</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('prendre_rdv') }}" title="Prendre rdv" style="color: black">Prendre Rendez-vous</a></li>
         </ul>
         </div>
 
