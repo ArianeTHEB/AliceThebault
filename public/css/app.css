@@ -42,7 +42,8 @@ background: url("../img/ArrièrePlanSite.jpg");
     justify-content: space-between;
     }
 
-/*formatting the navbar*/
+/*formatting the navbar
+
 .container-fluid {
     position: center;
     display: block;
@@ -50,6 +51,7 @@ background: url("../img/ArrièrePlanSite.jpg");
     height: 52px;
     background-color: #a4b197;
 }
+
 .navbar {
     position: center;
     display: flex;
@@ -71,7 +73,7 @@ background: url("../img/ArrièrePlanSite.jpg");
 .navbar .nav-link ul li {
     margin:0 120px;
 }
-/*
+
 .collapse{
 
 }
@@ -80,6 +82,83 @@ background: url("../img/ArrièrePlanSite.jpg");
 
 }
 */
+
+/*test navbar */
+nav
+{
+    margin: 10px auto;
+    width: 100%;
+    height: 52px;
+    background: #a4b197;
+}
+
+nav .main_pages
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .main_pages a
+{
+    display: flex;
+    list-style: none;
+    position: center;
+    text-decoration: none;
+    font-size:18px;
+    /*width: 20%;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-family: Arial, sans-serif;
+    color: white;*/
+}
+
+nav a:hover
+{
+    background: #a4b197
+}
+
+label, #toggle
+{
+    display: none;
+}
+
+@media all and (max-width: 991px)
+{
+    nav
+    {
+        height: 60px;
+    }
+
+    nav .main_pages
+    {
+        display: none;
+        flex-direction: column;
+        background: #a4b197;
+        height: 220px;
+    }
+
+    nav .main_pages a {
+        width: 50%;
+    }
+
+    label
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: black;
+        cursor: pointer;
+    }
+
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+}
 
 
 /*formating Presentations*/
