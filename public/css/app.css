@@ -1,6 +1,6 @@
 
 main {
-   /* margin-bottom: 100px;*/
+   margin-bottom: 100px;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -106,17 +106,12 @@ nav .main_pages a
     position: center;
     text-decoration: none;
     font-size:18px;
-    /*width: 20%;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    font-family: Arial, sans-serif;
-    color: white;*/
+    width: 20%;
 }
 
 nav a:hover
 {
-    background: #a4b197
+    background: #9eb488
 }
 
 label, #toggle
@@ -128,6 +123,7 @@ label, #toggle
 {
     nav
     {
+        z-index: 800;
         height: 60px;
     }
 
@@ -135,28 +131,28 @@ label, #toggle
     {
         display: none;
         flex-direction: column;
-        background: #a4b197;
+        background: #646c5c;
         height: 220px;
     }
 
     nav .main_pages a {
         width: 50%;
+        background: #a4b197;
     }
 
     label
     {
         width: 30px;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
-        margin: 0 auto;
         font-size: 40px;
         color: black;
-        cursor: pointer;
+
     }
 
     #toggle:checked + .main_pages {
-        display: flex;
+        display: inline;
     }
 }
 
