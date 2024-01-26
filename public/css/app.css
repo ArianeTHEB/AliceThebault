@@ -83,7 +83,7 @@ background: url("../img/ArrièrePlanSite.jpg");
 }
 */
 
-/*test navbar */
+/*formatting navbar */
 nav
 {
     margin: 10px auto;
@@ -97,6 +97,7 @@ nav .main_pages
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 nav .main_pages a
@@ -123,7 +124,6 @@ label, #toggle
 {
     nav
     {
-        z-index: 800;
         height: 60px;
     }
 
@@ -133,11 +133,13 @@ label, #toggle
         flex-direction: column;
         background: #646c5c;
         height: 220px;
+        z-index: 4;
     }
 
     nav .main_pages a {
         width: 50%;
         background: #a4b197;
+
     }
 
     label
