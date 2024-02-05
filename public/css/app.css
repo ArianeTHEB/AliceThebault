@@ -5,7 +5,6 @@ main {
     margin-right: 5%;
 }
 
-/*.section{}*/
 
 /*Formatting titre site*/
 .alice{
@@ -40,6 +39,9 @@ background: url("../img/ArrièrePlanSite.jpg");
     bottom: 0;
     text-align: center;
     justify-content: space-between;
+    background: #d5dad1;
+    filter: opacity(80%);
+    overflow:hidden;
     }
 
 /*formatting the navbar
@@ -98,7 +100,7 @@ nav .main_pages
     justify-content: space-around;
     align-items: center;
 
-}
+    }
 
 nav .main_pages a
 {
@@ -131,9 +133,8 @@ label, #toggle
     {
         display: none;
         flex-direction: column;
-        background: #646c5c;
         height: 220px;
-        z-index: 4;
+
     }
 
     nav .main_pages a {
@@ -146,11 +147,10 @@ label, #toggle
     {
         width: 30px;
         display: flex;
-        justify-content: left;
+        justify-content: center;
         align-items: center;
         font-size: 40px;
         color: black;
-
     }
 
     #toggle:checked + .main_pages {
@@ -163,7 +163,7 @@ label, #toggle
 .presentation{
     font-size: 25px;
     text-align: justify;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -172,10 +172,9 @@ label, #toggle
 
 
 
-/*formatting consultation*/
-
+/*formating consultation*/
 .container1{
-    margin-top: 50px;
+    margin-top: 110px;
 }
 
 .row{
@@ -264,166 +263,3 @@ label, #toggle
     transition: all 0.4s ease-in-out;
     align-items: center;
 }
-/*formatting modal original*/
-/*
-.box{
-    width: 50px;
-    margin-left: 48%;
-    }
-
-.button{
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-}
-
-.box2{
-    width: 200px;
-}
-
-.button2{
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-}
-
-
-.button:hover{
-
-    color: black;
-}*/
-
-
-
-/*
-.manifeste .cross{
-    position: absolute;
-    top: 3px;
-    right: 3px;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition:0.3s ease;
-    color: black;
-}
-
-.manifeste .cross:hover{
-    color: grey;
-}
-
-/*formatting soutien individuel
-.soutienIndividuel{
-    margin-left: 35%;
-    padding: 10px;
-    background: #cdd3ba;
-    border-radius: 5px;
-    height: 550px;
-    width: 550px;
-   /*inset: 0;
-    position: fixed;
-    z: 40;*/
-   /* transition: all 0.4s ease-in-out;
-    align-items: center;
-}
-
-.soutienIndividuel .cross{
-    position: absolute;
-    top: 3px;
-    right: 10px;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition:0.3s ease;
-    color: black;
-}
-
-.soutienIndividuel .cross:hover{
-    color: grey;
-}
-
-/*formatting psychothérapie
-.psychotherapie{
-    margin-left: 35%;
-    padding: 10px;
-    background: #cdd3ba;
-    border-radius: 5px;
-    height: 550px;
-    width: 550px;
-    position: relative;
-    transition: all 0.4s ease-in-out;
-    align-items: center;
-}
-
-.psychotherapie .cross{
-    position: absolute;
-    top: 3px;
-    right: 10px;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition:0.3s ease;
-    color: black;
-}
-
-.psychotherapie .cross:hover{
-    color: grey;
-}
-
-/*formatting soutien à la parentalité
-.parentalité{
-    margin-left: 35%;
-    padding: 10px;
-    background: #cdd3ba;
-    border-radius: 5px;
-    height: 550px;
-    width: 550px;
-    position: relative;
-    transition: all 0.4s ease-in-out;
-    align-items: center;
-}
-
-.parentalité .cross{
-    position: absolute;
-    top: 3px;
-    right: 10px;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition:0.3s ease;
-    color: black;
-}
-
-.parentalité .cross:hover{
-    color: grey;
-}
-
-/*formatting thérapie de couple
-.couple{
-    margin-left: 35%;
-    padding: 50px;
-    background: #cdd3ba;
-    border-radius: 5px;
-    height: 550px;
-    width: 550px;
-    position: relative;
-    transition: all 0.4s ease-in-out;
-    align-items: center;
-}
-
-.couple .cross{
-    position: absolute;
-    top: 3px;
-    right: 10px;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition:0.3s ease;
-    color: black;
-}
-
-.couple .cross:hover{
-    color: grey;
-}*/
-
-
